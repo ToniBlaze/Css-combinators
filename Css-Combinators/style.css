@@ -1,0 +1,63 @@
+.container div:nth-child(2n) {
+    display: inline-block;
+    border-color: red;
+}
+
+.container div {
+    display: inline-block;
+    position: relative;
+}
+
+.container div:nth-child(2n+1) span:nth-child(2n) {
+    color: rgb(18, 209, 18);
+}
+
+.container div:nth-child(2) span:last-of-type {
+    color:blue; 
+}
+
+.container div:nth-child(6) span:not(:last-of-type) {
+    color:yellow; 
+}
+
+.container div span:first-of-type {
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+}
+
+.container div span:nth-child(2) {
+    position: absolute;
+    top: -20px;
+    left: 30px;
+}
+
+.container div:nth-child(10) span:last-of-type {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+.container div:nth-child(1) span:last-of-type {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+}
+
+.container {
+    font-size:0;
+}
+
+.container div {
+font-size:1rem;
+}
+
+
+
+
+
+
+
+
+
+
