@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    margin: 10vh 0;
+}
+
+.board {
+    position: absolute;
+    border:1px solid black;
+    left: 30%;
+    top: 50%;
+}
+
+.row, .row-even {
+    font-size: 0;
+}
+
+.row div, .row-even div {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+}
+
+.row div span, .row-even div span {  
+    position: absolute;
+}
+
+.row div:nth-child(even), .row-even div:nth-child(odd) {
+    background-color: black;
+}
+
+.row div:nth-child(odd), .row-even div:nth-child(even) {
+    background-color: burlywood;
+}
+
+.row:first-of-type div span:first-of-type {
+    top: -20px;
+    left: 15px;
+}
+
+/* 
+fare la stessa cosa con la colonna
+e fare la stessa cosa con riga e colonna ultime, last of type */
+
+.row:first-of-type div:first-of-type span:nth-child(2n), 
+.row div:first-of-type span,
+.row-even div:first-of-type span:last-of-type {
+    left: -20px;
+    top: 15px;
+}
+
+.row:first-of-type div:last-of-type span:last-of-type {
+    right: -20px;
+    top: 15px;
+}
+
