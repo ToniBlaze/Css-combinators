@@ -3,11 +3,17 @@ h1 {
     margin: 10vh 0;
 }
 
+.board .row div:hover,
+.board .row-even div:hover {
+    background-color: red;
+}
+
 .board {
     position: absolute;
     border:1px solid black;
-    left: 30%;
-    top: 50%;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,50%);
 }
 
 .row, .row-even {
@@ -55,3 +61,13 @@ e fare la stessa cosa con riga e colonna ultime, last of type */
     top: 15px;
 }
 
+.row-even:last-of-type div span:first-of-type {
+    right: 15px;
+    bottom: -20px;
+}
+
+.row div:last-of-type span:last-of-type,
+.row-even div:last-of-type span:last-of-type {
+    right: -20px;
+    top: 15px;
+}
